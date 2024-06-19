@@ -1,0 +1,72 @@
+{   
+    "default": {
+        "firstScene": "univ",
+        "sceneFadeDuration": 1000,
+		"autoLoad": true,
+		"autoRotate": -2
+    },
+
+    "scenes": {
+        "univ": {
+            "title": "Université",
+            "hfov": 100,
+            "pitch": 0,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/NKhc1Mk.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0.1,
+                    "yaw": 0.9,
+                    "type": "scene",
+                    "text": "Rectorat",
+                    "sceneId": "rect"
+                },
+				{
+                    "pitch": 0.1,
+                    "yaw": 100.9,
+                    "type": "scene",
+                    "text": "Rectorat",
+                    "sceneId": "rect2"
+                }
+            ]
+        },
+
+        "rect": {
+            "title": "Rectorat",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/Q615YOL.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Université",
+                    "sceneId": "univ",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+		"rect2": {
+            "title": "Rectorat",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/NKhc1Mk.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Université",
+                    "sceneId": "univ",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        }
+    }
+}
